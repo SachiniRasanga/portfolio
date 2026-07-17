@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sachini Abeywardhana Portfolio Template</title>
+  <title>Sachini Rasanga Portfolio Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -27,7 +27,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/modern.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -40,38 +40,41 @@
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column align-items-center">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header id="header" class="header">
+    <div class="container header-inner">
 
-    <div class="profile-img mb-3">
-      <img src="assets/img/profile.jpeg" alt="" class="img-fluid rounded-circle shadow">
+      <a href="#hero" class="logo">
+        <img src="assets/img/profile.jpeg" alt="Sachini Rasanga" class="logo-img">
+        <span class="sitename">Sachini Rasanga</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="social-links">
+          <a href="https://sachinirasanga.medium.com/" class="medium" target="_blank" aria-label="Medium"><i
+              class="bi bi-medium"></i></a>
+          <a href="mailto:sachinirasanga98@gmail.com" class="mail" target="_blank" aria-label="Email"><i
+              class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/sachini-abeywardhana/" class="linkedin" target="_blank"
+            aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/SachiniRasanga" class="github" target="_blank" aria-label="GitHub"><i
+              class="bi bi-github"></i></a>
+        </div>
+        <a href="#contact" class="btn-hire">Hire Me</a>
+        <i class="header-toggle bi bi-list"></i>
+      </div>
+
     </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center mb-3 text-decoration-none">
-      <h1 class="sitename text-white">Sachini Abeywardhana</h1>
-    </a>
-
-    <div class="social-links text-center mb-4">
-      <a href="https://sachinirasanga.medium.com/" class="medium mx-2" target="_blank"><i
-          class="bi bi-medium text-white"></i></a>
-      <a href="mailto:sachini.abeywardhana@gmail.com" class="mail mx-2" target="_blank"><i
-          class="bi bi-envelope text-white"></i></a>
-      <a href="https://www.linkedin.com/in/sachini-abeywardhana/" class="linkedin mx-2" target="_blank"><i
-          class="bi bi-linkedin text-white"></i></a>
-      <a href="https://github.com/SachiniRasanga" class="github mx-2" target="_blank"><i
-          class="bi bi-github text-white"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
 
@@ -80,14 +83,36 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/portfolio/profilebackground.jpg" alt="" data-aos="fade-in" class="">
+      <div class="hero-bg">
+        <img src="assets/img/hero-bg-modern.jpg" alt="" data-aos="fade-in">
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Sachini Abeywardhana </h2>
-        <p>I'm <span class="typed"
-            data-typed-items="UI / UX Designer,Freelancer, Frontend Developer, Fullstack Developer  ">Designer</span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span
-            class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      <div class="container hero-inner">
+
+        <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
+          <h2>Sachini Rasanga</h2>
+          <p class="hero-role">I'm a <span class="typed"
+              data-typed-items="UI / UX Designer,Freelancer, Frontend Developer, Fullstack Developer  ">Designer</span><span
+              class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+          <p class="hero-tagline">Designing intuitive experiences, one pixel at a time.</p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn-primary">View My Work <i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="btn-ghost">Get in Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div><b>35+</b><span>Projects</span></div>
+            <div><b>70+</b><span>Happy Clients</span></div>
+            <div><b>2+</b><span>Years Experience</span></div>
+          </div>
+        </div>
+
+        <div class="hero-photo" data-aos="zoom-in" data-aos-delay="250">
+          <div class="hero-photo-frame">
+            <img src="assets/img/profile.jpeg" alt="Sachini Rasanga">
+          </div>
+          <span class="hero-photo-badge"><i class="bi bi-patch-check-fill"></i> UI / UX Designer</span>
+        </div>
+
       </div>
 
     </section><!-- /Hero Section -->
@@ -98,7 +123,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>I am Sachini Abeywardhana, a dedicated and creative UI/UX designer with a strong passion for crafting
+        <p>I am Sachini Rasanga, a dedicated and creative UI/UX designer with a strong passion for crafting
           intuitive and user-centered digital experiences. My background in information technology, combined with
           hands-on experience in design and development, allows me to bridge the gap between aesthetics and
           functionality. I thrive on understanding user needs and translating them into seamless interfaces that enhance
@@ -1276,7 +1301,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">Sachini Abeywardhana</a>
+        Designed by <a href="https://bootstrapmade.com/">Sachini Rasanga</a>
       </div>
     </div>
 

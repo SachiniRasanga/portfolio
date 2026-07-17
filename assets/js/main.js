@@ -56,6 +56,19 @@
   }
 
   /**
+   * Toggle header background on scroll
+   */
+  const headerEl = document.querySelector('#header');
+
+  function toggleHeaderScrolled() {
+    if (headerEl) {
+      headerEl.classList.toggle('scrolled', window.scrollY > 40);
+    }
+  }
+  window.addEventListener('load', toggleHeaderScrolled);
+  document.addEventListener('scroll', toggleHeaderScrolled);
+
+  /**
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
